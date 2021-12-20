@@ -19,7 +19,7 @@ const DatabaseModule = TypeOrmModule.forRootAsync({
       },
     );
     return {
-      type: 'mysql',
+      type: 'postgres',
       host: dbConfig.host,
       port: dbConfig.port,
       username: dbConfig.username,
