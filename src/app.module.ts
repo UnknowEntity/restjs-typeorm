@@ -27,6 +27,7 @@ const DatabaseModule = TypeOrmModule.forRootAsync({
       database: dbConfig.database,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
+      ssl: true,
     };
   },
   inject: [ConfigService],
